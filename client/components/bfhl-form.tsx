@@ -37,6 +37,7 @@ export function BfhlForm({ onSubmit }: BfhlFormProps) {
       onSubmit(data)
     } catch (err) {
       setError('Invalid JSON input or API request failed')
+      console.log(err)
     }
   }
 
